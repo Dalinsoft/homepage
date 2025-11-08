@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dalin Real Estate Agency</title>
+    <title>Dalin Real Estate Agency (Rep. seo cheolho)</title>
 
     <style>
-        /* (1) 기본 배경 및 글꼴 설정 */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f4f7f6; /* 아주 연한 회색 배경 */
-            color: #333; /* 기본 글자 색 */
+            background-color: #f4f7f6;
+            color: #333;
             margin: 0;
             padding: 20px;
             display: flex;
@@ -19,68 +18,101 @@
             align-items: center;
             min-height: 100vh;
         }
-
-        /* (2) 흰색 카드 박스 */
         .container {
             width: 100%;
-            max-width: 700px; /* 최대 넓이 고정 */
-            background-color: #ffffff; /* 흰색 카드 배경 */
-            padding: 30px 40px; /* 안쪽 여백 */
-            border-radius: 10px; /* 모서리 둥글게 */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* 은은한 그림자 */
+            max-width: 800px; /* 정보가 많아져서 살짝 넓힘 */
+            background-color: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
         }
-
-        /* (3) 제목 스타일 */
         h1 {
-            color: #2c3e50; /* 제목 색 (진한 네이비) */
-            border-bottom: 2px solid #e0e0e0; /* 밑줄 */
-            padding-bottom: 10px;
+            color: #2c3e50;
             margin-top: 0;
+            margin-bottom: 5px;
         }
-
-        /* (4) 본문 단락 스타일 */
-        p {
+        /* [추가] '모바일 앱 개발' 같은 한 줄 소개 */
+        .tagline {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+        /* [추가] '공식 정보' 섹션 제목 */
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            font-size: 1.3em;
+        }
+        /* [추가] 정보를 '항목: 값'으로 깔끔하게 정렬하는 그리드 */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 200px 1fr; /* 항목(200px) | 값(나머지) */
+            gap: 15px; /* 줄 간격 */
             font-size: 16px;
-            margin-bottom: 15px;
         }
-
-        /* (5) '항목' 글자 (Business Name:) */
-        p strong {
-            color: #555; /* 항목 글자색 (조금 더 진하게) */
-            display: inline-block;
-            min-width: 200px; /* 줄 맞춤을 위해 최소 넓이 */
+        .info-grid strong {
+            color: #555; /* 항목 글자색 */
+            font-weight: 600;
+        }
+        .info-grid span {
+            color: #222; /* 값 글자색 */
+        }
+        /* [추가] 하단 저작권 */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #999;
         }
     </style>
     </head>
 <body>
 
     <div class="container">
-        <h1>Dalin Real Estate Agency</h1>
+        <h1>Dalin Real Estate Agency [cite: 15]</h1>
+        
+        <p class="tagline">Mobile App Development & Real Estate Services</p>
 
-        <p>
+        <h2>Official Business Information</h2>
+        
+        <div class="info-grid">
+            
             <strong>Business Name:</strong>
-            Dalin Real Estate Agency
-        </p>
+            <span>Dalin Real Estate Agency [cite: 15]</span>
+            
+            <strong>Representative:</strong>
+            <span>seo cheolho [cite: 22, 23]</span>
+            
+            <strong>Business Reg. Number:</strong>
+            <span>227-22-06839 [cite: 20]</span>
 
-        <p>
+            <strong>Date of Business Start:</strong>
+            <span>October 17, 2022 [cite: 32]</span>
+            
             <strong>Address:</strong>
-            B215, 2F, 3, Arts center-ro 44beon-gil, Bupyeong-gu, Incheon, Republic of Korea
-        </p>
+            <span>2F-B215, 3 Arts center-ro 44beon-gil, Bupyeong-gu, Incheon, 21437, Republic of Korea [cite: 26]</span>
+            
+            <strong>Business Type:</strong>
+            <span>Real estate activities / Wholesale and retail trade [cite: 34]</span>
 
-        <p>
-            <strong>Business Registration Number:</strong>
-            227-22-06839
-        </p>
+            <strong>Business Item (Main):</strong>
+            <span>Real estate agents and brokers, Real estate marketing [cite: 35]</span>
 
-        <p>
+            <strong>Business Item (Sub):</strong>
+            <span>Electronic commerce via internet </span>
+
             <strong>Contact:</strong>
-            fkqcl2005@gmail.com
-        </p>
+            <span>fkqcl2005@gmail.com</span>
+        </div>
 
-        <p>
-            <strong>About:</strong>
-            Mobile App Development
-        </p>
+        <footer>
+            &copy; 2025 Dalin Real Estate Agency. All Rights Reserved.
+        </footer>
     </div>
-    </body>
+
+</body>
 </html>
