@@ -10,6 +10,9 @@
         h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
         h2 { color: #333; border-bottom: 1px solid #ddd; padding-bottom: 8px; margin-top: 30px; font-size: 1.2em; }
         p { margin: 10px 0; font-size: 0.95em; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9em; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+        th { background-color: #f8f9fa; }
         .warning { background-color: #fff3cd; border: 1px solid #ffeaa7; padding: 20px; border-radius: 8px; margin: 20px 0; }
         footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.85em; color: #777; }
     </style>
@@ -19,29 +22,69 @@
         <h1>🛡️ 비트대장(Upbit) 서비스 이용약관</h1>
 
         <h2>제1조 (목적)</h2>
-        <p>본 약관은 사용자가 비트대장(이하 "서비스")을 기술적 매매 지표를 학습하고 연구하는 보조 도구로 사용하는 것과 관련하여 필요한 사항을 규정함을 목적으로 합니다.</p>
+        <p>본 약관은 사용자가 '비트대장'(이하 "서비스")을 기술적 매매 지표를 학습하고 연구하는 전술적 보조 도구로 사용하는 것과 관련하여 필요한 사항을 규정합니다.</p>
 
         <h2>제2조 (용어의 정의)</h2>
-        <p>* "서비스": 사용자의 Upbit 거래소 계정을 연동하여 사용자가 직접 설정한 지표 조합에 따라 현물 거래 명령을 자동 수행하는 유틸리티 소프트웨어입니다.<br>
-        * "API 키": Upbit 계정 접근을 위해 필요한 Access Key와 Secret Key를 의미하며, 사용자가 직접 발급받아 서비스에 입력해야 합니다.</p>
+        <p>* "서비스": 사용자의 Upbit 계정을 연동하여 사용자가 직접 조립한 지표 조합에 따라 현물 매매 명령을 자동 실행하는 소프트웨어입니다.<br>
+        * "API 키": Upbit 거래소 접근을 위해 필요한 Access Key와 Secret Key를 의미합니다.</p>
 
-        <h2>제5조 (서비스의 범위 및 제한)</h2>
-        <p>* 본 서비스는 업비트(Upbit) 현물 시장(KRW 마켓 등)을 지원하며, 레버리지 기능을 제공하지 않습니다.<br>
-        * 사용자의 기기 성능 및 네트워크 상태에 따라 데이터 수신 및 주문 속도에 차이가 발생할 수 있습니다.</p>
+        <h2>제5조 (서비스 등급 및 운용 한도)</h2>
+        <p>서비스는 시스템 부하 관리 및 안정적인 전술 운용을 위해 등급별 운용 한도를 다음과 같이 적용합니다. (원화 기준)</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>등급</th>
+                    <th>최소 주문</th>
+                    <th>최대 운용 한도</th>
+                    <th>비고</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>General</strong></td>
+                    <td>5,000원</td>
+                    <td>10만 원</td>
+                    <td>평생 무료</td>
+                </tr>
+                <tr>
+                    <td><strong>Agent</strong></td>
+                    <td>5,000원</td>
+                    <td>300만 원</td>
+                    <td>유료 구독</td>
+                </tr>
+                <tr>
+                    <td><strong>Pro</strong></td>
+                    <td>5,000원</td>
+                    <td>1,000만 원</td>
+                    <td>유료 구독</td>
+                </tr>
+                <tr>
+                    <td><strong>Partner</strong></td>
+                    <td>5,000원</td>
+                    <td>3,000만 원</td>
+                    <td>승인 파트너</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>* 'Admin' 등급은 시스템 관리 및 테스트를 위해 한도 제한 없이 이용 가능합니다.</p>
 
-        <h2>제7조 (사용자의 의무)</h2>
-        <p>* 사용자는 API 키 발급 시 반드시 **[자산조회, 주문조회, 원화거래]** 권한만 허용해야 하며, **[출금]** 권한은 반드시 비활성화해야 합니다.<br>
-        * API 키 관리 소홀로 발생하는 모든 책임은 사용자 본인에게 있습니다.</p>
+        <h2>제6조 (보상형 광고 및 기능 이용)</h2>
+        <p>General 등급 사용자는 서비스 내에서 제공되는 보상형 광고(AdMob) 시청을 완료함으로써 백테스팅, 파라미터 최적화 등 특정 고급 전술 기능에 대한 한시적 이용 권한을 획득할 수 있습니다.</p>
+
+        <h2>제9조 (계약 해지 및 데이터 파기)</h2>
+        <p>사용자는 앱 내 '환경설정' 화면을 통해 언제든지 회원 탈퇴(계약 해지)를 할 수 있습니다. 탈퇴 시 사용자의 이메일 기록을 포함하여 Firebase 및 앱 내 저장된 모든 연동 데이터는 즉시 자동 파기됩니다.</p>
 
         <div class="warning">
-            <h2>제8조 (면책조항 및 위험 고지)</h2>
-            <p><strong>⚠️ 본 서비스는 금융 자문 서비스가 아니며, 수익을 보장하지 않는 기술적 연구 보조 도구입니다.</strong><br>
-            * 모든 매매 전략과 파라미터는 사용자가 직접 설정합니다. 서비스는 사용자의 수동적 설정값을 기반으로 명령을 실행할 뿐이며, 그 결과에 대해 책임을 지지 않습니다.<br>
-            * 암호화폐 투자는 원금 손실 위험이 매우 큽니다. 모든 투자 결정과 그에 따른 결과는 전적으로 사용자 본인의 책임입니다.<br>
-            * 거래소 서버 점검, 네트워크 장애, 천재지변 등으로 인한 손해에 대해 서비스는 면책됩니다.</p>
+            <h2>제10조 (면책조항 및 위험 고지)</h2>
+            <p><strong>⚠️ 중요: 본 서비스는 금융 자문이 아니며 수익을 보장하지 않습니다.</strong><br>
+            * 모든 매매 전술 설정은 사용자가 직접 결정하며, 앱은 사용자의 설정값에 따른 명령을 실행할 뿐입니다.<br>
+            * 암호화폐 투자는 높은 변동성으로 인한 원금 손실 위험이 크며, 모든 결과에 대한 책임은 사용자 본인에게 있습니다.</p>
         </div>
 
-        <footer>&copy; 2025 Dalin Real Estate Agency. All rights reserved.</footer>
+        <footer>
+            문의: daejangkoreabiz@gmail.com<br>
+            &copy; 2025 Dalin Real Estate Agency. All rights reserved.
+        </footer>
     </div>
 </body>
 </html>
