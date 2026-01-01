@@ -3,91 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>서비스이용약관 - 비트대장(Upbit)</title>
+    <title>서비스이용약관 - 비트대장 for Upbit</title>
     <style>
-        body { font-family: -apple-system, sans-serif; line-height: 1.6; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .container { width: 100%; max-width: 800px; background-color: #ffffff; padding: 40px 50px; border-radius: 12px; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07); }
-        h1 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
-        h2 { color: #333; border-bottom: 1px solid #ddd; padding-bottom: 8px; margin-top: 30px; font-size: 1.2em; }
-        p { margin: 10px 0; font-size: 0.95em; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9em; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
-        th { background-color: #f8f9fa; }
-        .warning { background-color: #fff3cd; border: 1px solid #ffeaa7; padding: 20px; border-radius: 8px; margin: 20px 0; }
-        footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.85em; color: #777; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .subtitle {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            font-size: 1.3em;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.95em;
+            color: #777;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>🛡️ 비트대장(Upbit) 서비스 이용약관</h1>
+        <h1>🛡️ 비트대장 for Upbit 서비스 이용약관</h1>
 
         <h2>제1조 (목적)</h2>
-        <p>본 약관은 사용자가 '비트대장'(이하 "서비스")을 기술적 매매 지표를 학습하고 연구하는 전술적 보조 도구로 사용하는 것과 관련하여 필요한 사항을 규정합니다. 본 서비스는 'Dalin Soft'에서 운영합니다.</p>
+        <p>본 약관은 회원이 비트대장(운영: Dalin Soft, 이하 "서비스")을 암호화폐 자동매매 전략을 학습하고 연구하는 교육적 보조 도구로 사용하는 것과 관련하여, 서비스와 회원 간의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.</p>
 
         <h2>제2조 (용어의 정의)</h2>
-        <p>* "서비스": 사용자의 Upbit 계정을 연동하여 사용자가 직접 조립한 지표 조합에 따라 현물 매매 명령을 자동 실행하는 소프트웨어입니다.<br>
-        * "API 키": Upbit 거래소 접근을 위해 필요한 Access Key와 Secret Key를 의미합니다.</p>
+        <p>* "서비스": 회원의 Upbit 거래소 계정을 연동하여 회원이 직접 조립한 전략에 따라 암호화폐 현물 거래를 자동으로 수행하도록 돕는 모바일 애플리케이션을 의미합니다.<br>
+        * "회원": 본 약관에 따라 이용계약을 체결하고 서비스를 이용하는 고객을 말합니다.<br>
+        * "API 키": 회원의 Upbit 거래소 계정 접근을 위해 필요한 Access Key, Secret Key를 통칭하며, 회원이 직접 발급받아 서비스에 입력해야 합니다.<br>
+        * "전략": 서비스가 제공하는 기술적 지표(MA, RSI, MACD 등)를 활용하여 특정한 알고리즘에 따라 매매를 수행하는 로직을 의미합니다.</p>
 
-        <h2>제5조 (서비스 등급 및 운용 한도)</h2>
-        <p>서비스는 시스템 부하 관리 및 안정적인 전술 운용을 위해 등급별 운용 한도를 다음과 같이 적용합니다. (원화 기준)</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>등급</th>
-                    <th>최소 주문</th>
-                    <th>최대 운용 한도</th>
-                    <th>비고</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>General</strong></td>
-                    <td>5,000원</td>
-                    <td><strong>10만 원</strong></td>
-                    <td>평생 무료</td>
-                </tr>
-                <tr>
-                    <td><strong>Agent</strong></td>
-                    <td>5,000원</td>
-                    <td><strong>300만 원</strong></td>
-                    <td>유료 구독</td>
-                </tr>
-                <tr>
-                    <td><strong>Pro</strong></td>
-                    <td>5,000원</td>
-                    <td><strong>1,000만 원</strong></td>
-                    <td>유료 구독</td>
-                </tr>
-                <tr>
-                    <td><strong>Partner</strong></td>
-                    <td>5,000원</td>
-                    <td><strong>3,000만 원</strong></td>
-                    <td>승인 파트너</td>
-                </tr>
-            </tbody>
-        </table>
-        <p>* 'Admin' 등급은 시스템 관리 및 테스트를 위해 한도 제한 없이 이용 가능합니다.</p>
+        <h2>제3조 (약관의 명시와 개정)</h2>
+        <p>* 서비스는 본 약관의 내용을 회원이 쉽게 알 수 있도록 서비스 내에 게시합니다.<br>
+        * 서비스는 관련법을 위배하지 않는 범위에서 본 약관을 개정할 수 있습니다.<br>
+        * 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여, 적용일자 7일 전부터 공지합니다.</p>
 
-        <h2>제6조 (보상형 광고 및 기능 이용)</h2>
-        <p>General 등급 사용자는 서비스 내에서 제공되는 보상형 광고(AdMob) 시청을 완료함으로써 백테스팅, 파라미터 최적화 등 특정 고급 전술 기능에 대한 한시적 이용 권한을 획득할 수 있습니다.</p>
+        <h2>제4조 (회원가입)</h2>
+        <p>* 회원가입은 이용자의 동의와 서비스의 승낙으로 체결됩니다.<br>
+        * 다음의 경우 회원가입 승낙이 거부되거나 해지될 수 있습니다:<br>
+        * 이전에 회원 자격을 상실한 경우, 허위 정보 기재, 만 19세 미만 등</p>
 
-        <h2>제9조 (계약 해지 및 데이터 파기)</h2>
-        <p>사용자는 앱 내 '환경설정' 화면을 통해 언제든지 회원 탈퇴(계약 해지)를 할 수 있습니다. 탈퇴 시 사용자의 이메일 기록을 포함하여 Firebase 및 앱 내 저장된 모든 연동 데이터는 즉시 자동 파기됩니다.</p>
+        <h2>제5조 (서비스의 제공 및 변경)</h2>
+        <p>* 서비스는 다음과 같은 업무를 수행합니다:<br>
+        * 선택한 전략에 따른 Upbit 현물 마켓 자동매매 기능 제공<br>
+        * Upbit 계정 자산 현황 및 거래 내역 조회 기능<br>
+        * 전략 성과를 시뮬레이션하는 백테스팅 및 최적화 기능<br>
+        * 회원의 역할(Role)에 따라 서비스 이용 범위에 차등을 둡니다 (원화 기준):<br>
+        * 'General' 회원: 평생 무료 등급. 최대 운용 한도(10만 원), 기본 전략 및 KRW 마켓 이용 가능.<br>
+        * 'Agent' 회원: 유료 구독 회원. 최대 운용 한도(300만 원), 확장 전략 필터 이용 가능.<br>
+        * 'Pro' 회원: 유료 구독 회원. 최대 운용 한도(1,000만 원), 모든 전략 및 AI 최적화 기능 이용 가능.<br>
+        * 'Referral' 회원: 파트너십 특별 등급. 최대 운용 한도(3,000만 원) 및 전용 종목 제공. (운영팀 승인 필요)<br>
+        * 'admin' 회원: 서비스 관리 목적으로 모든 기능 제한 없이 이용.<br>
+        * 서비스는 운영상 필요에 따라 서비스의 전부 또는 일부를 변경할 수 있습니다.</p>
+
+        <h2>제6조 (서비스의 중단)</h2>
+        <p>서비스는 컴퓨터 보수점검, 통신두절 등 운영상 이유가 있는 경우 서비스 제공을 일시적으로 중단할 수 있습니다.</p>
+
+        <h2>제7조 (회원의 의무)</h2>
+        <p>* 회원은 비밀번호, API 키에 대한 관리 책임이 있으며, 제3자가 이를 이용하도록 해서는 안 됩니다.<br>
+        * 회원은 API 키 발급 시 '현물 매매' 및 '조회' 권한만 허용하고 '출금' 권한은 반드시 비활성화해야 합니다.<br>
+        * 회원은 서비스를 역공학하거나 안정적 운영을 방해하는 행위를 해서는 안 됩니다.</p>
 
         <div class="warning">
-            <h2>제10조 (면책조항 및 위험 고지)</h2>
-            <p><strong>⚠️ 중요: 본 서비스는 금융 자문이 아니며 수익을 보장하지 않습니다.</strong><br>
-            * 모든 매매 전술 설정은 사용자가 직접 결정하며, 앱은 사용자의 설정값에 따른 명령을 실행할 뿐입니다.<br>
-            * 암호화폐 투자는 높은 변동성으로 인한 원금 손실 위험이 크며, 모든 결과에 대한 책임은 사용자 본인에게 있습니다.</p>
+            <h2>제8조 (면책조항 및 위험 고지)</h2>
+            <p><strong>⚠️ 가장 중요: 본 서비스는 순수한 학습 및 연구 목적으로 제작된 기술적 보조 도구이며, 투자를 권유하거나 수익을 보장하지 않습니다.</strong><br>
+            * 모든 거래 전략 및 파라미터는 전적으로 회원 본인이 직접 설정합니다. 서비스는 회원의 수동적 설정을 자동으로 실행할 뿐이며, 그 결과에 대한 책임을 지지 않습니다.<br>
+            * 암호화폐 투자는 높은 변동성으로 인한 원금 손실 위험이 매우 큽니다. 투자 결정과 그에 따른 책임은 전적으로 회원 본인에게 있습니다.<br>
+            * 서비스는 거래소 API 장애, 네트워크 장애, 천재지변 등으로 발생하는 손해에 대해 책임을 지지 않습니다.</p>
         </div>
 
+        <h2>제9조 (계약 해지 및 이용 제한)</h2>
+        <p>* 회원은 언제든지 앱 내 '회원탈퇴' 기능을 통해 이용계약을 해지할 수 있습니다.<br>
+        * 약관 위반 시 서비스는 이용을 제한하거나 계약을 해지할 수 있습니다.</p>
+
+        <h2>제10조 (지적 재산권)</h2>
+        <p>서비스에 대한 저작권 및 지적 재산권은 'Dalin Soft'(Dalin Real Estate Agency)에게 귀속됩니다.</p>
+
+        <h2>제11조 (준거법 및 재판관할)</h2>
+        <p>서비스와 회원 간에 발생한 분쟁은 대한민국 법을 준거법으로 하며, 민사소송법 상의 관할법원에 제소합니다.</p>
+
         <h2>부칙</h2>
-        <p>본 약관은 <strong>2026년 1월 1일</strong>부터 적용됩니다.</p>
+        <p>본 약관은 2026년 1월 1일부터 적용됩니다.</p>
 
         <footer>
-            문의: <strong>koreadaejangbiz@gmail.com</strong><br>
+            문의: koreadaejangbiz@gmail.com<br>
             &copy; 2026 Dalin Soft (Dalin Real Estate Agency). All rights reserved.
         </footer>
     </div>
+
 </body>
 </html>

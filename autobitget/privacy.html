@@ -3,40 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개인정보처리방침 - 비트대장(Bitget)</title>
+    <title>개인정보처리방침 - 비트대장</title>
     <style>
-        body { font-family: -apple-system, sans-serif; line-height: 1.6; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .container { width: 100%; max-width: 800px; background-color: #ffffff; padding: 40px 50px; border-radius: 12px; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07); }
-        h1 { color: #2c3e50; text-align: center; margin-bottom: 5px; }
-        .subtitle { font-size: 1em; color: #777; margin-bottom: 30px; text-align: center; border-bottom: 2px solid #eee; padding-bottom: 15px; }
-        h2 { color: #333; border-bottom: 1px solid #ddd; padding-bottom: 8px; margin-top: 30px; font-size: 1.2em; }
-        p { margin: 10px 0; font-size: 0.95em; }
-        footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.85em; color: #777; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        .subtitle {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+            margin-top: 30px;
+            font-size: 1.3em;
+        }
+        p {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.95em;
+            color: #777;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>🛡️ 비트대장(Bitget) 개인정보처리방침</h1>
+        <h1>🛡️ 비트대장 개인정보처리방침</h1>
+        
         <p class="subtitle">최종 수정일: 2026년 1월 1일</p>
 
-        <h2>제1조 (수집 항목 및 저장 기술)</h2>
-        <p><strong>(1) 계정 정보</strong>: Google 로그인을 통해 제공되는 이메일 주소 및 식별 정보를 수집합니다.<br>
-        <strong>(2) 거래소 API 키</strong>: Bitget API Key, Secret Key, Passphrase를 사용합니다.<br>
-        <strong>(3) 기술적 보호</strong>: 모든 API 키는 서버로 전송되지 않으며, 사용자의 스마트폰 내부 보안 저장소(FlutterSecureStorage)에 암호화되어 로컬에만 보관됩니다.</p>
+        <p>'비트대장'(운영: Dalin Soft, 이하 '앱')은 이용자의 개인정보를 중요시하며, 「개인정보 보호법」 등 관련 법규를 준수하고 있습니다. 본 개인정보처리방침을 통해 이용자가 제공하는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며, 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.</p>
 
-        <h2>제4조 (회원 탈퇴 및 데이터 자동 파기)</h2>
-        <p>사용자는 앱 내 '환경설정' 메뉴를 통해 언제든지 회원 탈퇴를 요청할 수 있습니다. <strong>탈퇴 즉시 Firebase Authentication에 저장된 이메일 기록 및 Firestore의 모든 관련 사용자 데이터는 영구적으로 자동 삭제</strong>되며, 기기 내 저장된 API 키 역시 즉각 파기됩니다.</p>
+        <h2>제1조 (수집하는 개인정보의 항목 및 수집방법)</h2>
+        <p>앱은 회원가입, 원활한 서비스 제공 등을 위해 아래와 같은 개인정보를 수집하고 있습니다.</p>
+        <p><strong>(1) 회원가입 및 계정 관리</strong><br>
+        * 수집 항목: Google 계정 정보 (이메일 주소)<br>
+        * 수집 목적: 이용자 식별, Google 로그인 기능 제공, 계정 관리</p>
+        
+        <p><strong>(2) 서비스 이용 기록</strong><br>
+        * 수집 항목: 서비스 이용 기록(계정 생성일, 마지막 로그인 일시), 사용자 역할(Role), 무료 백테스팅 횟수(freeBacktestCount), 구독 상태<br>
+        * 수집 목적: 서비스 이용 통계, 사용자 권한에 따른 기능 제한, 무료 기능 제공 및 관리</p>
+        
+        <p><strong>(3) 거래소 연동 정보</strong><br>
+        * 수집 항목: Bitget 거래소 API Key, Secret Key, Passphrase<br>
+        * 수집 방법: 이용자가 앱 내 설정 화면에서 직접 입력<br>
+        * 중요: 수집된 API 키 정보는 개발자 서버로 전송되지 않으며, 암호화된 방식으로 이용자의 기기 내 보안 저장소(FlutterSecureStorage)에만 저장됩니다.</p>
 
-        <h2>제5조 (제3자 서비스 및 광고 제공)</h2>
-        <p>본 서비스는 맞춤형 보상형 광고 제공을 위해 <strong>Google AdMob</strong> 서비스를 이용합니다. 이 과정에서 구글은 사용자의 기기 광고 식별자(ADID/IDFA) 등을 수집할 수 있으며, 이는 구글의 개인정보보호정책을 따릅니다.</p>
+        <h2>제2조 (개인정보의 수집 및 이용목적)</h2>
+        <p>앱은 수집한 개인정보를 다음의 목적을 위해 활용합니다.</p>
+        <p>* 회원 관리: 회원제 서비스 이용에 따른 본인확인, 개인 식별, 불량회원의 부정 이용 방지와 비인가 사용 방지<br>
+        * 서비스 제공: 자동매매 봇 실행, 자산 현황 조회, 거래 내역 조회 등 앱의 핵심 기능 제공<br>
+        * 권한 관리: 사용자의 역할(General, Agent, Pro, Referral, admin) 및 구독 상태에 따라 투자금, 레버리지, 사용 가능 전략 등 서비스 이용 범위 제한</p>
 
-        <h2>제8조 (개인정보 보호 책임자 및 문의)</h2>
-        <p>개인정보 관련 문의사항은 아래 연락처로 문의해 주시기 바랍니다.<br>
-        * 담당자 이메일: <strong>koreadaejangbiz@gmail.com</strong></p>
+        <h2>제3조 (개인정보의 보유 및 이용기간)</h2>
+        <p>이용자의 개인정보는 원칙적으로, 회원 탈퇴 시까지 보유 및 이용됩니다. 회원 탈퇴를 요청하는 경우, 수집된 모든 개인정보는 즉시 파기됩니다.</p>
+
+        <h2>제4조 (개인정보의 파기절차 및 방법)</h2>
+        <p>앱은 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체없이 해당 개인정보를 파기합니다. 이용자가 회원탈퇴를 신청할 경우, Firebase Authentication 계정 정보 및 Firestore에 저장된 모든 관련 데이터가 영구적으로 삭제됩니다.</p>
+
+        <h2>제5조 (개인정보의 제3자 제공)</h2>
+        <p>앱은 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우는 예외로 합니다.</p>
+        <p>* 이용자들이 사전에 동의한 경우<br>
+        * 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우<br>
+        * 서비스 제공에 반드시 필요한 경우 (예: Google Firebase 인증 및 데이터베이스 서비스 사용)</p>
+
+        <h2>제6조 (이용자의 권리 및 행사방법)</h2>
+        <p>이용자는 언제든지 등록되어 있는 자신의 개인정보를 조회하거나 수정할 수 있으며, 계정 삭제(회원탈퇴)를 요청할 수 있습니다. 계정 삭제는 앱 내 '설정' 화면의 '회원탈퇴' 기능을 통해 직접 수행할 수 있습니다.</p>
+
+        <h2>제7조 (개인정보의 안전성 확보 조치)</h2>
+        <p>앱은 이용자들의 개인정보를 처리함에 있어 개인정보가 분실, 도난, 유출, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 다음과 같은 기술적/관리적 대책을 강구하고 있습니다.</p>
+        <p>* 거래소 API 키 암호화: API 키와 같은 민감 정보는 이용자의 기기 내 안전한 공간에 암호화하여 저장합니다.<br>
+        * 해킹 등에 대비한 기술적 대책: 앱은 보안이 검증된 Google Firebase 플랫폼을 사용하여 데이터를 관리하며, 모든 통신은 암호화(SSL) 되어 전송됩니다.</p>
+
+        <h2>제8조 (개인정보처리방침의 변경)</h2>
+        <p>본 개인정보처리방침의 내용 추가, 삭제 및 수정이 있을 경우 개정 최소 7일전부터 앱 내 공지사항 또는 공식 카페를 통하여 고지할 것입니다.</p>
+
+        <h2>제9조 (문의처)</h2>
+        <p>개인정보처리방침에 대한 문의사항은 아래의 연락처로 문의해 주시기 바랍니다.<br>
+        * 이메일: koreadaejangbiz@gmail.com</p>
 
         <footer>
             &copy; 2026 Dalin Soft (Dalin Real Estate Agency). All rights reserved.
         </footer>
     </div>
+
 </body>
 </html>
