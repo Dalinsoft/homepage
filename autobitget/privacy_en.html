@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - MyBit</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6;background-color:#f4f7f6;color:#333;margin:0;padding:20px;display:flex;justify-content:center;align-items:center;min-height:100vh}
+    .container{width:100%;max-width:800px;background-color:#fff;padding:40px 50px;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,.07)}
+    h1{color:#2c3e50;margin-top:0;margin-bottom:5px;text-align:center}
+    .subtitle{font-size:1.1em;color:#555;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:20px;text-align:center}
+    h2{color:#333;border-bottom:1px solid #ddd;padding-bottom:8px;margin-top:30px;font-size:1.3em}
+    p{margin:10px 0}
+    ul{margin:10px 0 10px 18px;padding:0}
+    li{margin:6px 0}
+    table{width:100%;border-collapse:collapse;margin:12px 0}
+    th,td{border:1px solid #e6e6e6;padding:10px;vertical-align:top;font-size:.97em}
+    th{background:#fafafa;text-align:left}
+    footer{text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid #eee;font-size:.95em;color:#777}
+    .note{background:#f8f9fa;border:1px solid #eee;padding:12px;border-radius:8px}
+    .lang{text-align:right;font-size:.95em;margin-bottom:10px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="lang"><a href="privacy.html">한국어</a> | English</p>
+    <h1>🛡️ MyBit Privacy Policy</h1>
+    <p class="subtitle">Last updated: October 8, 2026</p>
+
+    <p>
+      MyBit (operated by Dalin Soft, the "App") values your privacy.
+      This policy explains what information the App handles and how it is used.
+    </p>
+
+    <p class="note">
+      <strong>Summary</strong><br>
+      · The App has <strong>no sign-up and no login</strong>. It does not collect, transmit, or store your personal information on any developer server (the developer does not operate a server for this App).<br>
+      · Your exchange API key, trade records, and settings are stored <strong>only on your device</strong>.<br>
+      · Google processes some information for ad display (Google AdMob) and subscription payments (Google Play).
+    </p>
+
+    <h2>1. Information the App handles</h2>
+
+    <p><strong>(1) Exchange connection information</strong></p>
+    <table>
+      <tr><th>Items</th><td>Bitget API Key, Secret Key, Passphrase</td></tr>
+      <tr><th>How it is provided</th><td>You enter it yourself on the settings screen of the App</td></tr>
+      <tr>
+        <th>Important</th>
+        <td>
+          Your API key is never sent to or stored on any developer server. It is stored in encrypted form only in the secure storage of your device (e.g., FlutterSecureStorage).
+          The App uses it only to send the order and query requests you set up to the Bitget exchange.
+        </td>
+      </tr>
+    </table>
+
+    <p><strong>(2) Information stored on your device</strong></p>
+    <table>
+      <tr><th>Items</th><td>Strategies you set up, order/fill/trade logs, backtest and optimization records, notification records, app lock setting, and subscription status check records (for offline checks)</td></tr>
+      <tr><th>Where</th><td>Stored only inside your device. Not sent anywhere.</td></tr>
+    </table>
+
+    <p><strong>(3) Subscription payments (Google Play)</strong></p>
+    <table>
+      <tr><th>Processor</th><td>Google LLC (Google Play Billing)</td></tr>
+      <tr>
+        <th>What happens</th>
+        <td>
+          Payment, renewal, cancellation, and refunds for the Premium subscription are handled by Google Play.
+          The App does not receive or store card numbers or other payment details.
+          It only stores the result of the subscription check on your device.
+        </td>
+      </tr>
+    </table>
+
+    <p><strong>(4) Advertising identifiers (ad SDK)</strong></p>
+    <table>
+      <tr>
+        <th>Items (examples)</th>
+        <td>Advertising ID, device and event information, IP address, approximate location, etc. — processed by the Google AdMob SDK to serve ads</td>
+      </tr>
+      <tr><th>Processor</th><td>Google LLC (Google AdMob / Google Mobile Ads)</td></tr>
+      <tr><th>Purpose</th><td>Showing interstitial and rewarded ads to free users, measuring ad performance, and preventing fraud</td></tr>
+      <tr>
+        <th>Note</th>
+        <td>
+          The App itself does not separately collect or store the above information; the scope of processing follows Google's policies.
+          (https://policies.google.com/technologies/ads)<br>
+          You can reset your advertising ID or opt out of personalized ads in your device settings.
+          No ads are shown while you have a Premium subscription.
+        </td>
+      </tr>
+    </table>
+
+    <h2>1-2. Permissions</h2>
+    <p>
+      The App uses the permissions below. Some, such as notifications, are up to you to allow.
+      Main features such as market data, charts, and backtesting work even if you do not allow them.
+    </p>
+    <table>
+      <tr><th>Permission</th><th>Purpose</th></tr>
+      <tr>
+        <td>Internet / network state</td>
+        <td>Communicating with the Bitget exchange (market data, orders, balance), ads, and subscription checks; checking connection status.</td>
+      </tr>
+      <tr>
+        <td>Notifications</td>
+        <td>Order, fill, and position alerts, trading signal alerts, and showing background running status. The App works without it; only notifications will not be shown.</td>
+      </tr>
+      <tr>
+        <td>Foreground service</td>
+        <td>Keeps your strategies running and market data in sync even when the App is not on screen or the screen is off. A notification is shown while it runs.</td>
+      </tr>
+      <tr>
+        <td>Battery optimization exemption</td>
+        <td>Reduces the chance of the operating system's power saving stopping background running. You choose whether to allow it; the App works without it.</td>
+      </tr>
+      <tr>
+        <td>Wake lock</td>
+        <td>Prevents processing from being cut off when the device sleeps while a strategy is running.</td>
+      </tr>
+      <tr>
+        <td>Fingerprint / biometrics (app lock)</td>
+        <td>When you turn on the app lock, your identity is checked with your device's screen lock (fingerprint, PIN, or pattern). The App does not store biometric data; the operating system handles it.</td>
+      </tr>
+      <tr>
+        <td>Vibration</td>
+        <td>Vibration when showing notifications</td>
+      </tr>
+      <tr>
+        <td>Billing (Google Play Billing)</td>
+        <td>Premium subscription payment and subscription status check</td>
+      </tr>
+      <tr>
+        <td>Advertising ID</td>
+        <td>Serving ads and measuring performance (Google AdMob)</td>
+      </tr>
+    </table>
+    <p class="note">
+      ※ The App <strong>does not request location, contacts, phone, SMS, photos, camera, or microphone permissions.</strong><br>
+      ※ You enter your exchange API key yourself, and it is stored only in the secure storage of your device (see 1 (1)).
+    </p>
+
+    <h2>2. How the information is used</h2>
+    <ul>
+      <li>Providing the service: helping send order requests based on your settings, viewing assets, trade history, and positions, monitoring and alerts, and backtest/optimization features</li>
+      <li>Applying usage limits: applying feature limits (investment amount, leverage, strategies, coins) for free use and the Premium subscription</li>
+      <li>Ads: showing ads to free users</li>
+    </ul>
+
+    <h2>3. Retention</h2>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Items (examples)</th>
+        <th>Retention</th>
+      </tr>
+      <tr>
+        <td>Exchange API key</td>
+        <td>API Key, Secret Key, Passphrase</td>
+        <td>Stored on your device only (not on any server). Removed when you delete or change it in the App, or uninstall the App.</td>
+      </tr>
+      <tr>
+        <td>Settings, trade logs, backtest records, etc.</td>
+        <td>Data stored on your device</td>
+        <td>Until you use the in-app delete/reset features or uninstall the App</td>
+      </tr>
+      <tr>
+        <td>Advertising identifiers, etc.</td>
+        <td>Processed by the ad SDK</td>
+        <td>According to Google's policies (you can reset your advertising ID or opt out of personalized ads in your device settings)</td>
+      </tr>
+      <tr>
+        <td>Subscription payment information</td>
+        <td>Google Play billing records</td>
+        <td>According to Google's policies</td>
+      </tr>
+    </table>
+
+    <h2>4. Deletion</h2>
+    <p>
+      The App does not store your personal information on any developer server, so there is no separate account deletion process.
+      Information stored on your device (API key, logs, settings, etc.) is removed when you use the in-app delete/reset features or uninstall the App.
+    </p>
+
+    <h2>5. Sharing with third parties</h2>
+    <p>The App does not collect your information on any developer server and, in principle, does not provide it to third parties.</p>
+
+    <h2>6. Service providers</h2>
+    <p class="note">
+      The App uses the external services below to provide its features.
+      If their content or the services used change, this policy will be updated.
+    </p>
+    <table>
+      <tr>
+        <th>Provider</th>
+        <th>Role</th>
+        <th>Items (examples)</th>
+      </tr>
+      <tr>
+        <td>Google LLC (Google Play / Google Play Billing)</td>
+        <td>Premium subscription payment and subscription status check</td>
+        <td>Google Play billing information (processed by Google; the App does not receive it directly)</td>
+      </tr>
+      <tr>
+        <td>Google LLC (Google AdMob / Google Mobile Ads)</td>
+        <td>Showing ads to free users, measuring performance, and preventing fraud</td>
+        <td>Advertising ID, device and event information, IP address, approximate location, etc.</td>
+      </tr>
+    </table>
+
+    <h2>7. International transfers</h2>
+    <p>
+      The App uses Google's global infrastructure for Google Play Billing and ads (Google AdMob),
+      so information may be processed on servers outside your country (e.g., the United States) when using these services.
+      No information is transferred to any developer server.
+    </p>
+    <table>
+      <tr>
+        <th>Recipient</th>
+        <th>Country</th>
+        <th>Items (examples)</th>
+        <th>Purpose</th>
+        <th>When / how</th>
+        <th>Retention</th>
+      </tr>
+      <tr>
+        <td>Google LLC</td>
+        <td>United States and other service countries</td>
+        <td>Advertising ID, device and event information, IP address, approximate location, etc.</td>
+        <td>Ad display and performance measurement</td>
+        <td>Sent over the network when ads are shown</td>
+        <td>According to Google's policies</td>
+      </tr>
+      <tr>
+        <td>Google LLC</td>
+        <td>United States and other service countries</td>
+        <td>Google Play billing information</td>
+        <td>Subscription payment processing</td>
+        <td>Sent over the network at payment/check time</td>
+        <td>According to Google's policies</td>
+      </tr>
+    </table>
+
+    <h2>8. Your rights</h2>
+    <p>
+      You can view, change, or delete your API key in the App and reset stored records.
+      Uninstalling the App removes all information on your device.
+      You can reset your advertising ID and opt out of personalized ads in your device settings.
+      You can cancel and request refunds for your subscription directly in Google Play's subscription management.
+    </p>
+
+    <h2>9. Security measures</h2>
+    <ul>
+      <li>Protecting your exchange API key: sensitive information such as API keys is stored in encrypted form in your device's secure storage and is not sent to any developer server.</li>
+      <li>Communication security: communication with the exchange is encrypted (SSL/TLS).</li>
+      <li>App lock: you can protect access to the App with your device's screen lock (fingerprint, PIN, or pattern).</li>
+    </ul>
+
+    <h2>10. Children</h2>
+    <p>The App is not intended for use by anyone under 19 (the age of majority in Korea) and does not knowingly collect information from children.</p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>If this policy is changed, we will notify you in the App at least 7 days before the change takes effect.</p>
+
+    <h2>12. Contact</h2>
+    <p>If you have questions about this policy, please contact:</p>
+    <ul>
+      <li>Email: koreadaejangbiz@gmail.com</li>
+    </ul>
+
+    <footer>
+      &copy; 2026 Dalin Soft. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
