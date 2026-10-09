@@ -36,7 +36,7 @@
       <strong>요약</strong><br>
       · 앱은 <strong>회원가입과 로그인이 없으며</strong>, 이용자의 개인정보를 개발자 서버로 수집·전송·저장하지 않습니다(개발자가 운영하는 서버가 없습니다).<br>
       · 거래소 API 키, 거래 기록, 설정 등은 <strong>이용자의 기기에만</strong> 저장됩니다.<br>
-      · 광고 표시(Google AdMob)와 구독 결제(Google Play)를 위해 Google이 일부 정보를 처리합니다.
+      · 광고 표시(Google AdMob)와 구독 결제(Google Play 또는 갤럭시 스토어)를 위해 Google 또는 삼성이 일부 정보를 처리합니다.
     </p>
 
     <h2>제1조 (처리하는 정보의 항목 및 방법)</h2>
@@ -61,13 +61,13 @@
       <tr><th>저장 위치</th><td>이용자의 기기 내부에만 저장되며 외부로 전송되지 않습니다.</td></tr>
     </table>
 
-    <p><strong>(3) 구독 결제(Google Play)</strong></p>
+    <p><strong>(3) 구독 결제(Google Play 또는 갤럭시 스토어)</strong></p>
     <table>
-      <tr><th>처리 주체</th><td>Google LLC (Google Play 결제)</td></tr>
+      <tr><th>처리 주체</th><td>앱을 설치한 스토어에 따라 Google LLC (Google Play 결제) 또는 Samsung Electronics Co., Ltd. (갤럭시 스토어 인앱 결제, Samsung In-App Purchase)</td></tr>
       <tr>
         <th>처리 내용</th>
         <td>
-          프리미엄 구독의 결제, 갱신, 해지, 환불은 Google Play가 처리합니다.
+          프리미엄 구독의 결제, 갱신, 해지, 환불은 앱을 설치한 스토어(Google Play 또는 갤럭시 스토어)가 처리합니다.
           앱은 카드 번호 등 결제 정보를 직접 받거나 저장하지 않으며,
           구독 여부 확인 결과만 기기에 저장합니다.
         </td>
@@ -129,8 +129,8 @@
         <td>알림 표시 시 진동</td>
       </tr>
       <tr>
-        <td>결제(Google Play 결제)</td>
-        <td>프리미엄 구독 결제 및 구독 상태 확인</td>
+        <td>결제(Google Play 결제 또는 삼성 인앱 결제)</td>
+        <td>프리미엄 구독 결제 및 구독 상태 확인(설치한 스토어에 따라 구글 또는 삼성)</td>
       </tr>
       <tr>
         <td>광고 ID</td>
@@ -173,8 +173,8 @@
       </tr>
       <tr>
         <td>구독 결제 정보</td>
-        <td>Google Play 결제 기록</td>
-        <td>Google의 정책에 따름</td>
+        <td>Google Play 또는 갤럭시 스토어 결제 기록</td>
+        <td>각 스토어(Google 또는 삼성)의 정책에 따름</td>
       </tr>
     </table>
 
@@ -200,8 +200,13 @@
       </tr>
       <tr>
         <td>Google LLC (Google Play / Google Play 결제)</td>
-        <td>프리미엄 구독 결제 및 구독 상태 확인</td>
+        <td>구글 플레이로 설치한 경우 프리미엄 구독 결제 및 구독 상태 확인</td>
         <td>Google Play 결제 정보(Google이 처리하며 앱은 직접 받지 않음)</td>
+      </tr>
+      <tr>
+        <td>Samsung Electronics Co., Ltd. (갤럭시 스토어 / 삼성 인앱 결제)</td>
+        <td>갤럭시 스토어로 설치한 경우 프리미엄 구독 결제 및 구독 상태 확인</td>
+        <td>삼성 결제 정보(삼성이 처리하며 앱은 직접 받지 않음), 구독 상품·구매 번호·구독 만료일 조회 결과</td>
       </tr>
       <tr>
         <td>Google LLC (Google AdMob / Google Mobile Ads)</td>
@@ -212,7 +217,7 @@
 
     <h2>제7조 (정보의 국외 이전)</h2>
     <p>
-      앱은 Google Play 결제 및 광고 제공(Google AdMob) 등 Google의 글로벌 인프라를 이용하므로,
+      앱은 Google Play 결제 및 광고 제공(Google AdMob) 등 Google의 글로벌 인프라와 갤럭시 스토어 결제(삼성 인앱 결제)를 이용하므로,
       해당 서비스 이용 과정에서 정보가 국외(예: 미국 등) 서버를 통해 처리될 수 있습니다.
       개발자 서버로의 정보 이전은 없습니다.
     </p>
@@ -241,6 +246,14 @@
         <td>결제·확인 시 네트워크를 통한 전송</td>
         <td>Google의 정책에 따름</td>
       </tr>
+      <tr>
+        <td>Samsung Electronics Co., Ltd.</td>
+        <td>대한민국 등(서비스 제공 국가)</td>
+        <td>삼성 결제 정보, 구독 상태 확인 정보</td>
+        <td>갤럭시 스토어 구독 결제 처리</td>
+        <td>결제·확인 시 네트워크를 통한 전송</td>
+        <td>삼성의 정책에 따름</td>
+      </tr>
     </table>
 
     <h2>제8조 (이용자의 권리 및 행사방법)</h2>
@@ -248,7 +261,7 @@
       이용자는 앱 내에서 API 키를 조회·변경·삭제하고 저장된 기록을 초기화할 수 있으며,
       앱을 삭제하면 기기 내 모든 정보가 제거됩니다.
       광고 식별자의 초기화와 맞춤광고 해제는 기기의 설정에서 할 수 있습니다.
-      구독 해지와 환불은 Google Play의 구독 관리에서 직접 할 수 있습니다.
+      구독 해지와 환불은 구독한 스토어(Google Play 또는 갤럭시 스토어)의 구독 관리에서 직접 할 수 있습니다.
     </p>
 
     <h2>제9조 (안전성 확보 조치)</h2>

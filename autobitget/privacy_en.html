@@ -36,7 +36,7 @@
       <strong>Summary</strong><br>
       · The App has <strong>no sign-up and no login</strong>. It does not collect, transmit, or store your personal information on any developer server (the developer does not operate a server for this App).<br>
       · Your exchange API key, trade records, and settings are stored <strong>only on your device</strong>.<br>
-      · Google processes some information for ad display (Google AdMob) and subscription payments (Google Play).
+      · Google or Samsung processes some information for ad display (Google AdMob) and subscription payments (Google Play or Galaxy Store).
     </p>
 
     <h2>1. Information the App handles</h2>
@@ -60,13 +60,13 @@
       <tr><th>Where</th><td>Stored only inside your device. Not sent anywhere.</td></tr>
     </table>
 
-    <p><strong>(3) Subscription payments (Google Play)</strong></p>
+    <p><strong>(3) Subscription payments (Google Play or Galaxy Store)</strong></p>
     <table>
-      <tr><th>Processor</th><td>Google LLC (Google Play Billing)</td></tr>
+      <tr><th>Processor</th><td>Depending on the store the App was installed from: Google LLC (Google Play Billing) or Samsung Electronics Co., Ltd. (Galaxy Store In-App Purchase, Samsung In-App Purchase)</td></tr>
       <tr>
         <th>What happens</th>
         <td>
-          Payment, renewal, cancellation, and refunds for the Premium subscription are handled by Google Play.
+          Payment, renewal, cancellation, and refunds for the Premium subscription are handled by the store the App was installed from (Google Play or Galaxy Store).
           The App does not receive or store card numbers or other payment details.
           It only stores the result of the subscription check on your device.
         </td>
@@ -128,8 +128,8 @@
         <td>Vibration when showing notifications</td>
       </tr>
       <tr>
-        <td>Billing (Google Play Billing)</td>
-        <td>Premium subscription payment and subscription status check</td>
+        <td>Billing (Google Play Billing or Samsung In-App Purchase)</td>
+        <td>Premium subscription payment and subscription status check (Google or Samsung, depending on the store you installed from)</td>
       </tr>
       <tr>
         <td>Advertising ID</td>
@@ -172,8 +172,8 @@
       </tr>
       <tr>
         <td>Subscription payment information</td>
-        <td>Google Play billing records</td>
-        <td>According to Google's policies</td>
+        <td>Google Play or Galaxy Store billing records</td>
+        <td>According to the policies of each store (Google or Samsung)</td>
       </tr>
     </table>
 
@@ -199,8 +199,13 @@
       </tr>
       <tr>
         <td>Google LLC (Google Play / Google Play Billing)</td>
-        <td>Premium subscription payment and subscription status check</td>
+        <td>Premium subscription payment and subscription status check when installed from Google Play</td>
         <td>Google Play billing information (processed by Google; the App does not receive it directly)</td>
+      </tr>
+      <tr>
+        <td>Samsung Electronics Co., Ltd. (Galaxy Store / Samsung In-App Purchase)</td>
+        <td>Premium subscription payment and subscription status check when installed from Galaxy Store</td>
+        <td>Samsung billing information (processed by Samsung; the App does not receive it directly), and the results of subscription product, purchase ID, and subscription end date lookups</td>
       </tr>
       <tr>
         <td>Google LLC (Google AdMob / Google Mobile Ads)</td>
@@ -211,7 +216,7 @@
 
     <h2>7. International transfers</h2>
     <p>
-      The App uses Google's global infrastructure for Google Play Billing and ads (Google AdMob),
+      The App uses Google's global infrastructure for Google Play Billing and ads (Google AdMob), and Samsung In-App Purchase for Galaxy Store billing,
       so information may be processed on servers outside your country (e.g., the United States) when using these services.
       No information is transferred to any developer server.
     </p>
@@ -240,6 +245,14 @@
         <td>Sent over the network at payment/check time</td>
         <td>According to Google's policies</td>
       </tr>
+      <tr>
+        <td>Samsung Electronics Co., Ltd.</td>
+        <td>Republic of Korea and other service countries</td>
+        <td>Samsung billing information and subscription status check information</td>
+        <td>Galaxy Store subscription payment processing</td>
+        <td>Sent over the network at payment/check time</td>
+        <td>According to Samsung's policies</td>
+      </tr>
     </table>
 
     <h2>8. Your rights</h2>
@@ -247,7 +260,7 @@
       You can view, change, or delete your API key in the App and reset stored records.
       Uninstalling the App removes all information on your device.
       You can reset your advertising ID and opt out of personalized ads in your device settings.
-      You can cancel and request refunds for your subscription directly in Google Play's subscription management.
+      You can cancel and request refunds for your subscription directly in the subscription management of the store you subscribed through (Google Play or Galaxy Store).
     </p>
 
     <h2>9. Security measures</h2>
