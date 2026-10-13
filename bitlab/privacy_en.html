@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - MyBit - Upbit Simulator</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6;background-color:#f4f7f6;color:#333;margin:0;padding:20px;display:flex;justify-content:center;align-items:center;min-height:100vh}
+    .container{width:100%;max-width:800px;background-color:#fff;padding:40px 50px;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,.07)}
+    h1{color:#2c3e50;margin-top:0;margin-bottom:5px;text-align:center}
+    .subtitle{font-size:1.1em;color:#555;margin-bottom:30px;border-bottom:2px solid #eee;padding-bottom:20px;text-align:center}
+    h2{color:#333;border-bottom:1px solid #ddd;padding-bottom:8px;margin-top:30px;font-size:1.3em}
+    p{margin:10px 0}
+    table{width:100%;border-collapse:collapse;margin:10px 0}
+    th,td{border:1px solid #ddd;padding:8px 10px;vertical-align:top;font-size:.95em}
+    th{background:#fafafa;text-align:left}
+    footer{text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid #eee;font-size:.95em;color:#777}
+    .note{background:#f8f9fa;border:1px solid #eee;padding:12px;border-radius:8px}
+    .lang{text-align:right;font-size:.95em;margin-bottom:10px}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="lang"><a href="privacy.html">한국어</a> | English</p>
+    <h1>🛡️ MyBit - Upbit Simulator Privacy Policy</h1>
+    <p class="subtitle">Last updated: October 13, 2026</p>
+
+    <p>
+      MyBit - Upbit Simulator (operated by Dalin Soft, the "App") values your privacy.
+      This policy explains what information the App handles and how it is used.
+    </p>
+
+    <p class="note">
+      <strong>Summary</strong><br>
+      · The App has <strong>no sign-up and no login</strong>. It does not collect or store your email, user ID, or similar information on any developer server (the developer does not operate a server for this App).<br>
+      · Your strategies, virtual orders and fills, virtual balance, and backtest results are stored <strong>only on your device</strong>.<br>
+      · The App <strong>does not ask for or store any exchange API key</strong>, and does not send real orders.<br>
+      · Google AdMob processes some information to show rewarded ads.
+    </p>
+
+    <h2>1. Information the App handles</h2>
+
+    <p><strong>(1) Account / login</strong></p>
+    <table>
+      <tr><th>Items</th><td>None</td></tr>
+      <tr><th>Note</th><td>The App has no login feature.</td></tr>
+    </table>
+
+    <p><strong>(2) Usage records stored on your device</strong></p>
+    <table>
+      <tr>
+        <th>Items (examples)</th>
+        <td>Strategies you set up, virtual orders/fills/balance/holdings, trade logs, notification records, backtest (simulation) results, app lock setting, and records of how many times you used ad rewards</td>
+      </tr>
+      <tr><th>Where</th><td>Created while you use the App and stored <strong>only on your device</strong>. Not sent anywhere.</td></tr>
+      <tr><th>Purpose</th><td>To provide paper trading, show your results and records, and provide reports</td></tr>
+    </table>
+
+    <p><strong>(3) Upbit-related information</strong></p>
+    <table>
+      <tr><th>Items</th><td>None</td></tr>
+      <tr><th>Important</th><td>The App <strong>does not ask for or store an Upbit API key (Access Key, Secret Key)</strong> and does not send real orders.</td></tr>
+      <tr><th>Note</th><td>The App fetches public market data (current prices, candles, etc.) that Upbit provides over the internet. Ordinary network information (such as your IP address) may be passed to Upbit's servers in the process.</td></tr>
+    </table>
+
+    <p><strong>(4) App lock (device authentication)</strong></p>
+    <table>
+      <tr><th>How it works</th><td>If you turn on the app lock, the App calls your device's authentication (fingerprint, face, PIN, pattern, etc.). The operating system handles the authentication. The App does not read or store your biometric data or PIN; it only learns whether authentication succeeded.</td></tr>
+    </table>
+
+    <p><strong>(5) Advertising identifiers (ad SDK)</strong></p>
+    <table>
+      <tr>
+        <th>Items (examples)</th>
+        <td>Advertising ID, device and event information, IP address, approximate location, etc. — processed by the Google AdMob SDK to deliver ads</td>
+      </tr>
+      <tr><th>Processed by</th><td>Google LLC (Google AdMob / Google Mobile Ads)</td></tr>
+      <tr><th>Purpose</th><td>Showing rewarded ads to keep the App free, measuring ad performance, and preventing fraud</td></tr>
+      <tr>
+        <th>Note</th>
+        <td>
+          The App itself does not separately collect or store this information; the scope follows Google's policies
+          (<span class="mono">https://policies.google.com/technologies/ads</span>).<br>
+          You can reset your advertising ID or opt out of personalized ads in your device settings.
+        </td>
+      </tr>
+    </table>
+
+    <h2>1-2. Permissions</h2>
+    <p>The App uses the permissions below. Notifications are optional, and the main features work even if you do not allow them.</p>
+    <table>
+      <tr><th>Permission</th><th>Purpose</th></tr>
+      <tr><td>Internet / network state</td><td>Fetching Upbit public market data, showing ads, and checking whether you are online</td></tr>
+      <tr><td>Notifications</td><td>Trade signal alerts and showing the status of background strategy runs. If you deny it, only the notifications are not shown.</td></tr>
+      <tr><td>Foreground service</td><td>Keeps your strategy simulation running when you are not looking at the App or the screen is off. A notification is shown while it runs.</td></tr>
+      <tr><td>Battery optimization exemption</td><td>Reduces the chance that the operating system's power saving stops background running. You choose whether to allow it, and the App works even if you do not.</td></tr>
+      <tr><td>Wake lock</td><td>Prevents the device from sleeping and cutting off processing while a strategy runs</td></tr>
+      <tr><td>Vibration</td><td>Vibrates when a notification arrives</td></tr>
+      <tr><td>Advertising ID</td><td>Used by Google AdMob to deliver ads and measure performance (see section 1 (5)). You can reset or opt out in your device settings.</td></tr>
+      <tr><td>Biometric / fingerprint / device authentication</td><td>Used to unlock the App only if you turn on the app lock. The operating system manages the credentials.</td></tr>
+    </table>
+    <p class="note">
+      ※ The App <strong>does not request location, contacts, phone, SMS, photos, camera, or microphone permissions</strong>,
+      and it has no sign-up or login, so it does not ask for account information.
+    </p>
+
+    <h2>2. Purpose of use</h2>
+    <p>
+      Usage records you keep on your device are processed <strong>only on your device</strong> to provide the App's features.
+      Advertising identifiers and similar data are processed through Google AdMob to deliver rewarded ads that keep the App free.
+    </p>
+
+    <h2>3. Retention</h2>
+    <table>
+      <tr><th>Category</th><th>Items (examples)</th><th>Retention</th></tr>
+      <tr>
+        <td>Usage records (on your device)</td>
+        <td>Strategies, virtual orders/fills/balance, backtest results, etc.</td>
+        <td>Kept on your device; removed when you reset them in the App or uninstall the App</td>
+      </tr>
+      <tr>
+        <td>Advertising identifiers, etc.</td>
+        <td>Processed by the ad SDK</td>
+        <td>Follows Google's policies (you can reset the advertising ID or opt out of personalized ads in device settings)</td>
+      </tr>
+    </table>
+
+    <h2>4. Deletion</h2>
+    <p>
+      The App does not store your information on any developer server.
+      Records on your device are removed when you uninstall the App, and some can be removed with the App's reset features (such as resetting the virtual balance).
+    </p>
+
+    <h2>5. Sharing with third parties</h2>
+    <p>
+      The developer does not provide your information to third parties. However, Google AdMob processes the information in section 1 (5) when ads are shown.
+    </p>
+
+    <h2>6. Processors and external services</h2>
+    <table>
+      <tr><th>Provider / service</th><th>Purpose</th><th>Items (examples)</th></tr>
+      <tr>
+        <td>Google LLC (Google AdMob / Google Mobile Ads)</td>
+        <td>Showing rewarded ads to keep the App free, measuring performance, and preventing fraud</td>
+        <td>Advertising ID, device and event information, IP address, approximate location, etc.</td>
+      </tr>
+      <tr>
+        <td>Upbit (Dunamu) public market data</td>
+        <td>Fetching current prices, candles, and other public data</td>
+        <td>Ordinary network information (such as IP address) that comes with a data request. No user-identifying information is sent.</td>
+      </tr>
+    </table>
+
+    <h2>7. Transfers abroad</h2>
+    <p>When ads are delivered through Google AdMob, data may be processed on servers outside Korea.</p>
+    <table>
+      <tr>
+        <th>Recipient</th><th>Country</th><th>Items (examples)</th><th>Purpose</th><th>When / how</th><th>Retention</th>
+      </tr>
+      <tr>
+        <td>Google LLC</td>
+        <td>United States and other countries where the service operates</td>
+        <td>Advertising ID, device and event information, IP address, approximate location, etc.</td>
+        <td>Showing ads and measuring performance in the App</td>
+        <td>Sent over the network when an ad is shown</td>
+        <td>Follows Google's policies</td>
+      </tr>
+    </table>
+
+    <h2>8. Your rights</h2>
+    <p>
+      Because the App does not store your information on any developer server, the developer has no information to look up, correct, or delete for you.
+      You can remove the records on your device by uninstalling the App or using its reset features,
+      and you can reset your advertising ID or opt out of personalized ads in your device settings.
+    </p>
+
+    <h2>9. Security</h2>
+    <p>
+      The App does not store your information on any developer server.
+      To protect the records on your device from loss or theft, we recommend using your device lock screen, installing OS security updates, and turning on the App's app lock.
+    </p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>If this policy is changed, we will announce it in the App or through an official channel at least 7 days before the change takes effect.</p>
+
+    <h2>11. Contact</h2>
+    <p>For questions about this policy, please contact: koreadaejangbiz@gmail.com</p>
+
+    <footer>
+      &copy; 2026 Dalin Soft. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
